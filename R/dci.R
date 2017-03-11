@@ -16,7 +16,7 @@
 #'}
 
 dci<-function(mat,xgrain,ygrain){
-  requireNamespace(RcppOctave)  
+  requireNamespace("RcppOctave")  
   #run Octave####
   aontfiles<-c("adj2adjL.m","dijkstra_edit.m")
   for(i in 1:length(aontfiles)){
